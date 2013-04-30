@@ -15,7 +15,7 @@ CC_VERSION = ('4', '7', '3')
 COMPILER_CC = 'gcc'
 COMPILER_CXX = 'g++'
 CPP = '/usr/bin/cpp'
-CPPFLAGS = ['-DHAVE_OPENSSL=1', '-D_LARGEFILE_SOURCE', '-D_FILE_OFFSET_BITS=64', '-DHAVE_FDATASYNC=1', '-DARCH="arm"', '-DPLATFORM="linux"', '-D__POSIX__=1', '-Wno-unused-parameter', '-D_FORTIFY_SOURCE=2']
+CPPFLAGS = ['-D_LARGEFILE_SOURCE', '-D_FILE_OFFSET_BITS=64', '-DHAVE_FDATASYNC=1', '-DARCH="arm"', '-DPLATFORM="linux"', '-D__POSIX__=1', '-Wno-unused-parameter', '-D_FORTIFY_SOURCE=2']
 CPPPATH_ST = '-I%s'
 CXX = ['/usr/bin/g++']
 CXXDEFINES_ST = '-D%s'
@@ -59,7 +59,7 @@ STATICLIB_ST = '-l%s'
 USE_DEBUG = False
 USE_GDBJIT = False
 USE_NPM = True
-USE_OPENSSL = True
+USE_OPENSSL = False
 USE_PROFILING = False
 USE_SHARED_CARES = False
 USE_SHARED_V8 = False

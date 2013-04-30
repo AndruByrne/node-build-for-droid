@@ -22,7 +22,7 @@
 #ifndef NODE_CONFIG_H
 #define NODE_CONFIG_H
 
-#define NODE_CFLAGS "-rdynamic -pthread -g -O3 -DHAVE_OPENSSL=1 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_FDATASYNC=1 -DARCH=\"arm\" -DPLATFORM=\"linux\" -D__POSIX__=1 -Wno-unused-parameter -D_FORTIFY_SOURCE=2 -I/usr/local/include/node"
+#define NODE_CFLAGS "-rdynamic -pthread -g -O3 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_FDATASYNC=1 -DARCH=\"arm\" -DPLATFORM=\"linux\" -D__POSIX__=1 -Wno-unused-parameter -D_FORTIFY_SOURCE=2 -I/usr/local/include/node"
 #define NODE_PREFIX "/usr/local"
 
 #endif /* NODE_CONFIG_H */
